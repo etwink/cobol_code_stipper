@@ -206,6 +206,7 @@ Each section (optional)
 Whole program structure (later)
 
 Azure OpenAI Summarizer
+```
 from openai import AzureOpenAI
 
 class CobolSummarizer:
@@ -230,7 +231,6 @@ Provide:
 3. Outputs produced
 4. Side effects (file I/O, calls)
 5. High-level summary (2–3 sentences)
-```
 
         response = self.client.chat.completions.create(
             model=self.deployment_name,
@@ -242,7 +242,9 @@ Provide:
         )
 
         return response.choices[0].message.content
+```
 Running It
+```
 # 1. Parse
 parser = CobolParser(cobol_code)
 parsed = parser.parse()
