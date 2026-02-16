@@ -231,7 +231,7 @@ Provide:
 3. Outputs produced
 4. Side effects (file I/O, calls)
 5. High-level summary (2–3 sentences)
-
+"""
         response = self.client.chat.completions.create(
             model=self.deployment_name,
             messages=[
